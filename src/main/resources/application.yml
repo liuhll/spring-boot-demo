@@ -1,0 +1,16 @@
+spring:
+  devtools:
+    restart:
+      enabled: true
+      exclude: WEB-INF/**
+  spring:
+    profiles: default
+
+app:
+  name: MyApp
+  description: ${app.name} is a Spring Boot Application
+
+environments:
+  dev:
+    url: http://localhost:8080
+    name: Developer Setup
